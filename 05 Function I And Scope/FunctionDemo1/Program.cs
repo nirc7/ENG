@@ -31,6 +31,36 @@ namespace FunctionDemo1
             Console.WriteLine(num);//1 ERROR!!! 9
 
             num = AddOne(num);
+
+            ForFuncDemo();
+
+        }
+
+        static void ForFuncDemo()
+        {
+           // int i = 0;
+            int counter;
+
+            for (int i = 0; i < 4; i++)
+            {
+                Console.Write(i + ", ");
+            }
+            Console.WriteLine();
+
+            //code...
+
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write(i + ", ");
+            }
+            Console.WriteLine();
+
+            //code....
+
+            for (int i = 0; i < 7; i++)
+            {
+                Console.Write(i + ", ");
+            }
         }
 
         static int AddOne(int num)
