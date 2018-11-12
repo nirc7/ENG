@@ -25,6 +25,24 @@ namespace StringDemo
             Console.WriteLine(CountLetter("1234434257", '8'));
             Console.WriteLine(FindSubSequence("123345789", "123"));
             Console.WriteLine(FindSubSequence2("123345789", "344"));
+            Console.WriteLine(FindSubSequence3("123345789", "344"));
+            Console.WriteLine( name.Contains("cO"));
+        }
+
+        static bool FindSubSequence3(string sequence, string sub)
+        {
+            //opt1
+            return  sequence.IndexOf(sub) != -1;
+
+            //opt2 - not recommend
+            //if (sequence.IndexOf(sub) == -1)
+            //{
+            //    return false;
+            //}
+            //else
+            //{
+            //    return true;
+            //}            
         }
 
         static bool FindSubSequence2(string sequence, string sub)
