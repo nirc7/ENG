@@ -26,13 +26,59 @@ namespace StringDemo
             Console.WriteLine(FindSubSequence("123345789", "123"));
             Console.WriteLine(FindSubSequence2("123345789", "344"));
             Console.WriteLine(FindSubSequence3("123345789", "344"));
-            Console.WriteLine( name.Contains("cO"));
+            Console.WriteLine(name.Contains("cO"));
+
+
+            Console.WriteLine(Reverse("hello"));
+            Console.WriteLine(Reverse2("hello"));
+            Console.WriteLine(IsPalimdrome("rotor"));
+            Console.WriteLine(IsPalimdrome("rotor2"));
+            Console.WriteLine(IsPalimdrome2("rotor"));
+            Console.WriteLine(IsPalimdrome2("rotor2"));
+        }
+
+        static bool IsPalimdrome2(string word)
+        {
+            
+            for (int i = 0; i < word.Length/2; i++)
+            {
+                if (word[i] != word[word.Length-i-1])
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+            static bool IsPalimdrome(string word)
+        {
+            return Reverse(word) == word;
+        }
+
+        static string Reverse(string word)
+        {
+            string str = "";
+            for (int i = 0; i < word.Length; i++)
+            {
+                str = word[i] + str;
+            }
+            return str;
+        }
+
+        static string Reverse2(string word)
+        {
+            string str = "";
+            for (int i = word.Length - 1; 0 <= i; i--)
+            {
+                str += word[i];//olleh
+            }
+            return str;
         }
 
         static bool FindSubSequence3(string sequence, string sub)
         {
             //opt1
-            return  sequence.IndexOf(sub) != -1;
+            return sequence.IndexOf(sub) != -1;
 
             //opt2 - not recommend
             //if (sequence.IndexOf(sub) == -1)
