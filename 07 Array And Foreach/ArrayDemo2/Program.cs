@@ -37,7 +37,6 @@ namespace ArrayDemo2
             EnlargeArrRef(ref arr);
             PrintArr(arr);
 
-            BubbleSort(arr);
         }
 
         static void PrintArr(int[] arr)
@@ -83,9 +82,6 @@ namespace ArrayDemo2
             return newArr;
         }
 
-        static void BubbleSort(int[] nums)
-        {
-
-        }
+       
     }
 }
