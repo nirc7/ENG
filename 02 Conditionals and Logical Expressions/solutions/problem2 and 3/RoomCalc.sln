@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomCalc", "RoomCalc\RoomCalc.csproj", "{5EAA7B43-DE26-44BF-8E13-E368A7218101}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grades", "Grades\Grades.csproj", "{F7ED0230-F53B-4AA8-9EBB-9D12DB0B3937}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EAA7B43-DE26-44BF-8E13-E368A7218101}.Debug|x86.ActiveCfg = Debug|x86
+		{5EAA7B43-DE26-44BF-8E13-E368A7218101}.Debug|x86.Build.0 = Debug|x86
+		{5EAA7B43-DE26-44BF-8E13-E368A7218101}.Release|x86.ActiveCfg = Release|x86
+		{5EAA7B43-DE26-44BF-8E13-E368A7218101}.Release|x86.Build.0 = Release|x86
+		{F7ED0230-F53B-4AA8-9EBB-9D12DB0B3937}.Debug|x86.ActiveCfg = Debug|x86
+		{F7ED0230-F53B-4AA8-9EBB-9D12DB0B3937}.Debug|x86.Build.0 = Debug|x86
+		{F7ED0230-F53B-4AA8-9EBB-9D12DB0B3937}.Release|x86.ActiveCfg = Release|x86
+		{F7ED0230-F53B-4AA8-9EBB-9D12DB0B3937}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
