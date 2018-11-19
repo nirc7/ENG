@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "targil1", "targil1+2\targil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "targil 2", "targil 2\targil 2.csproj", "{6273F80D-54C6-4B60-8560-C9FAFDB75EC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "targil 3", "targil 3\targil 3.csproj", "{31522332-C40D-4EF5-BD67-E18AD26DE32A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6273F80D-54C6-4B60-8560-C9FAFDB75EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6273F80D-54C6-4B60-8560-C9FAFDB75EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6273F80D-54C6-4B60-8560-C9FAFDB75EC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31522332-C40D-4EF5-BD67-E18AD26DE32A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31522332-C40D-4EF5-BD67-E18AD26DE32A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31522332-C40D-4EF5-BD67-E18AD26DE32A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31522332-C40D-4EF5-BD67-E18AD26DE32A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
