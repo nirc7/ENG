@@ -10,6 +10,12 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            double d = 7.26548654;
+            Console.WriteLine("d={0:F2}, {1}", d, 3);
+            string output = string.Format("d={0:F2}, {1}", d, 3) + "!";
+            Console.WriteLine(output);
+
+
             Console.WriteLine("ENTER ...");
             int rows = int.Parse(Console.ReadLine());
             int[,] matrix = new int[rows, int.Parse(Console.ReadLine())];//[rows , columns]

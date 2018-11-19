@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{2B7FA850-1E87-4E69-9889-D31F0CCCC536}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "targil1+2", "targil1+2\targil1+2.csproj", "{207FA0D5-D8A5-41DF-978D-F18C97671E52}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "targil1", "targil1+2\targil1.csproj", "{207FA0D5-D8A5-41DF-978D-F18C97671E52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "targil 2", "targil 2\targil 2.csproj", "{6273F80D-54C6-4B60-8560-C9FAFDB75EC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{207FA0D5-D8A5-41DF-978D-F18C97671E52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{207FA0D5-D8A5-41DF-978D-F18C97671E52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{207FA0D5-D8A5-41DF-978D-F18C97671E52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6273F80D-54C6-4B60-8560-C9FAFDB75EC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6273F80D-54C6-4B60-8560-C9FAFDB75EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6273F80D-54C6-4B60-8560-C9FAFDB75EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6273F80D-54C6-4B60-8560-C9FAFDB75EC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
