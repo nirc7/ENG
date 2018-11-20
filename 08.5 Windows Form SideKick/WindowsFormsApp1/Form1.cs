@@ -81,6 +81,9 @@ namespace WindowsFormsApp1
             lblRes.Text = monthCalendar1.SelectionStart.Date.AddDays(1).ToString();
         }
 
-       
+        private void btnSom_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

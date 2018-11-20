@@ -37,6 +37,7 @@
             this.btnChbListBoxClothes = new System.Windows.Forms.Button();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnSom = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAddOne
@@ -136,11 +137,22 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 8;
             // 
+            // btnSom
+            // 
+            this.btnSom.Location = new System.Drawing.Point(604, 328);
+            this.btnSom.Name = "btnSom";
+            this.btnSom.Size = new System.Drawing.Size(75, 23);
+            this.btnSom.TabIndex = 9;
+            this.btnSom.Text = "button1";
+            this.btnSom.UseVisualStyleBackColor = true;
+            this.btnSom.Click += new System.EventHandler(this.btnSom_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(889, 496);
+            this.Controls.Add(this.btnSom);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.btnChbListBoxClothes);
@@ -169,6 +181,7 @@
         private System.Windows.Forms.Button btnChbListBoxClothes;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btnSom;
     }
 }
 
