@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonDemo2", "PersonDemo2\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VectorDemo", "VectorDemo\VectorDemo.csproj", "{48D3C9E3-AAD3-4195-9C96-8478C450AAE5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackDemo", "StackDemo\StackDemo.csproj", "{2011BADD-14E9-479D-81A5-6F0D86C02133}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueDemo", "QueueDemo\QueueDemo.csproj", "{389E8C83-55FD-4EBB-93F0-B1E124EBE8E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{48D3C9E3-AAD3-4195-9C96-8478C450AAE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48D3C9E3-AAD3-4195-9C96-8478C450AAE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48D3C9E3-AAD3-4195-9C96-8478C450AAE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2011BADD-14E9-479D-81A5-6F0D86C02133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2011BADD-14E9-479D-81A5-6F0D86C02133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2011BADD-14E9-479D-81A5-6F0D86C02133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2011BADD-14E9-479D-81A5-6F0D86C02133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{389E8C83-55FD-4EBB-93F0-B1E124EBE8E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{389E8C83-55FD-4EBB-93F0-B1E124EBE8E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{389E8C83-55FD-4EBB-93F0-B1E124EBE8E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{389E8C83-55FD-4EBB-93F0-B1E124EBE8E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
