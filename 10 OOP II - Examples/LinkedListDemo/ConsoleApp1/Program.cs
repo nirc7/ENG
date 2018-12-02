@@ -28,15 +28,30 @@ namespace ConsoleApp1
 
             ll.InsertLast(25);
             ll.PrintList();
+            ll.InsertLast(10);
+            ll.PrintList();
+            ll.InsertLast(40);
+            ll.PrintList();
 
-            Console.WriteLine( ll.Exists(15));
+            Console.WriteLine(ll.Exists(15));
             Console.WriteLine(ll.Exists(5));
             Console.WriteLine(ll.Exists(25));
             Console.WriteLine(ll.Exists(155));
 
+
+            ll.Remove(50);
+            ll.PrintList();
             //ll.DeleteList();
             //ll.InsertLast(25);
             //ll.PrintList();
+
+            ll.DeleteList();
+            ll.AddSorted(8);
+            ll.AddSorted(5);
+            ll.AddSorted(2);
+            ll.AddSorted(18);
+            ll.AddSorted(10);
+            ll.PrintList();
 
             //code...
         }
@@ -74,6 +89,20 @@ namespace ConsoleApp1
             return false;
         }
 
+        public void InsertAfter(Node temp, int value)
+        {
+            if (temp != null)
+            {
+                Node t = new Node(value);
+                t.next = temp.next;
+                temp.next = t;
+            }
+            else
+            {
+                Console.WriteLine("NULL- INSERT AFTER!");
+            }
+        }
+
         public Node FindNode(int v)
         {
             for (Node temp = head; temp != null; temp = temp.next)
@@ -89,23 +118,23 @@ namespace ConsoleApp1
         public void PrintList()
         {
             Console.WriteLine("LL:");
-            for (Node temp= head; temp!=null   ;temp = temp.next)
+            for (Node temp = head; temp != null; temp = temp.next)
             {
-                Console.Write(temp.value  + " --> ");
+                Console.Write(temp.value + " --> ");
             }
             Console.WriteLine(@"_/\_");
         }
 
         public void InsertLast(int v)
         {
-            if (head==null)
+            if (head == null)
             {
                 InsertFirst(v);
                 return;
             }
 
             Node temp = head;
-            for (; temp.next != null; temp = temp.next){}
+            for (; temp.next != null; temp = temp.next) { }
             temp.next = new Node(v);
         }
 
@@ -116,6 +145,57 @@ namespace ConsoleApp1
             head = newNode;
         }
 
-        public void DeleteList(){ head = null; }
+        public void DeleteList() { head = null; }
+
+        public void RemoveFirst()
+        {
+            if (head != null)
+            {
+                head = head.next;
+            }
+        }
+
+        public void Remove(int value)
+        {
+            if (head == null)
+            {
+                return;
+            }
+
+            if (head.value == value)
+            {
+                RemoveFirst();
+            }
+            else
+            {
+                Node temp;
+                for (temp = head; temp.next != null && temp.next.value != value; temp = temp.next) { }
+
+                if (temp.next != null)
+                {
+                    temp.next = temp.next.next;
+                }
+            }
+        }
+
+        public void AddSorted(int value)
+        {
+            if (head == null)
+            {
+                head = new Node(value);
+            }
+
+            else if (value < head.value)
+            {
+                InsertFirst(value);
+            }
+            else
+            {
+                Node temp;
+                for (temp = head; temp.next != null && temp.next.value < value; temp = temp.next) { }
+
+                InsertAfter(temp, value);                
+            }
+        }
     }
 }
