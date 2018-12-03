@@ -51,7 +51,6 @@ namespace PropDemo2
             int inputNum =  int.Parse(Console.ReadLine());
             p1.MyCourse = (Course)inputNum;
             p1.Print();
-
         }
     }
 
