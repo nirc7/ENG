@@ -37,20 +37,36 @@ namespace BinaryTree
             //Console.WriteLine(bt.Find(17).Value);
             Console.WriteLine(bt.Find2(50).Value);
 
-            Console.WriteLine(bt.Delete(5));
+            //Console.WriteLine(bt.DeleteWithoutFind(5));
+            //bt.PrintTree();
+            //Console.WriteLine(bt.DeleteWithoutFind(20));
+            //bt.PrintTree();
+            //Console.WriteLine(bt.DeleteWithoutFind(75));
+            //bt.PrintTree();
+            //Console.WriteLine(bt.DeleteWithoutFind(70));
+            //bt.PrintTree();
+            //Console.WriteLine(bt.DeleteWithoutFind(55));
+            //bt.PrintTree();
+
+            Console.WriteLine(bt.DeleteWithParent(5));
             bt.PrintTree();
-            Console.WriteLine(bt.Delete(20));
+            Console.WriteLine(bt.DeleteWithParent(20));
             bt.PrintTree();
-            Console.WriteLine(bt.Delete(75));
+            Console.WriteLine(bt.DeleteWithParent(75));
             bt.PrintTree();
-            Console.WriteLine(bt.Delete(70));
+            Console.WriteLine(bt.DeleteWithParent(70));
             bt.PrintTree();
-            Console.WriteLine(bt.Delete(55));
+            Console.WriteLine(bt.DeleteWithParent(55));
             bt.PrintTree();
+
+            //BinaryTree bt2 = new BinaryTree(50);
+            //bt2.PrintTree();
+            //Console.WriteLine(bt2.DeleteWithoutFind(50));
+            //bt2.PrintTree();
 
             BinaryTree bt2 = new BinaryTree(50);
             bt2.PrintTree();
-            Console.WriteLine(bt2.Delete(50));
+            Console.WriteLine(bt2.DeleteWithParent(50));
             bt2.PrintTree();
 
         }
@@ -74,7 +90,7 @@ namespace BinaryTree
 
         public void PrintTree()
         {
-            Console.WriteLine();
+            Console.WriteLine("\n");
             if (head == null)
             {
                 Console.WriteLine("empty tree");
@@ -83,7 +99,7 @@ namespace BinaryTree
             {
                 Print(head);
             }
-            Console.WriteLine();
+            Console.WriteLine("\n\n");
         }
 
         private void Print(Node node)
@@ -104,6 +120,7 @@ namespace BinaryTree
             if (IsEmpty())
             {
                 head = new Node(value);
+                //head.Parent = head;
             }
             else
             {
@@ -118,6 +135,7 @@ namespace BinaryTree
                 if (temp.Left == null)
                 {
                     temp.Left = new Node(value);
+                    temp.Left.Parent = temp;
                 }
                 else
                 {
@@ -129,6 +147,7 @@ namespace BinaryTree
                 if (temp.Right == null)
                 {
                     temp.Right = new Node(value);
+                    temp.Right.Parent = temp;
                 }
                 else
                 {
@@ -225,7 +244,36 @@ namespace BinaryTree
             return null;
         }
 
-        public bool Delete(int valueToDelete)
+        public bool DeleteWithParent(int valueToFind)
+        {
+            Node temp = Find(valueToFind);
+            if (temp != null)
+            {
+                if (temp.Left == null && temp.Right == null)
+                {
+                    Node parent = temp.Parent;
+                    if (parent != null)
+                    {
+                        if (parent.Left == temp)
+                        {
+                            parent.Left = null;
+                        }
+                        else
+                        {
+                            parent.Right = null; 
+                        }
+                    }
+                    else // delete the head when it doesn't have children!
+                    {
+                        head = null;
+                    }
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public bool DeleteWithoutFind(int valueToDelete)
         {
             Node temp = head;
 
@@ -255,7 +303,7 @@ namespace BinaryTree
                         return false;
                     }
                 }
-                else if (temp.Right != null && temp.Right.Value == valueToDelete )
+                else if (temp.Right != null && temp.Right.Value == valueToDelete)
                 {
                     if (temp.Right.Left == null && temp.Right.Right == null)
                     {
@@ -265,7 +313,7 @@ namespace BinaryTree
                     else
                     {
                         return false;
-                    }                    
+                    }
                 }
                 else if (valueToDelete < temp.Value)
                 {
@@ -323,6 +371,7 @@ namespace BinaryTree
         public int Value { get; set; }
         public Node Left { get; set; }
         public Node Right { get; set; }
+        public Node Parent { get; set; }
 
         public Node(int value)
         {
