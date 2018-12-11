@@ -23,7 +23,7 @@ namespace InsertionSortNS
             num2 = 7;
             num1 -= num2;//num1 = 2
             num2 += num1;
-            num1 = num2 - num1;
+            num1 = num2 - num1; 
 
 
             int[] nums = new int[] { 3, 7, 2, 9, 1, 22, 5, 4 };
