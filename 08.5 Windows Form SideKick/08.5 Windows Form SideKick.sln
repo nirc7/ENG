@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "Windows
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo2", "Demo2\Demo2.csproj", "{A458BB38-7ED8-4FFC-A256-88E977FC6C73}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMixDrix", "XMixDrix\XMixDrix.csproj", "{CE6C5C43-3777-4C38-BE5B-3C00BF7C740F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A458BB38-7ED8-4FFC-A256-88E977FC6C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A458BB38-7ED8-4FFC-A256-88E977FC6C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A458BB38-7ED8-4FFC-A256-88E977FC6C73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE6C5C43-3777-4C38-BE5B-3C00BF7C740F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE6C5C43-3777-4C38-BE5B-3C00BF7C740F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE6C5C43-3777-4C38-BE5B-3C00BF7C740F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE6C5C43-3777-4C38-BE5B-3C00BF7C740F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
